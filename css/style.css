@@ -221,6 +221,10 @@ header ul li:hover {
   padding-bottom: 1rem;
 }
 
+.who-are-we p {
+  padding-bottom: 3rem;
+}
+
 /* END OF WHO ARE WE */
 
 /* FR NUMBERS */
@@ -237,11 +241,11 @@ header ul li:hover {
 }
 
 .stats {
-  padding: 1rem 0;
+  padding: 1rem 0 2rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  row-gap: 1rem;
+  row-gap: 0.5rem;
 }
 .stat {
   display: flex;
@@ -267,7 +271,7 @@ header ul li:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .cards-grid h3 {
@@ -319,7 +323,7 @@ header ul li:hover {
 /* PACKAGING */
 .packaging {
   background-color: var(--bg-clr);
-  padding-top: 3rem;
+  padding: 3rem 0;
   max-width: 100%;
   padding-inline: 5%;
 }
