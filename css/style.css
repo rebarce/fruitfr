@@ -854,7 +854,7 @@ header ul li:hover {
   .packaging-types {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 
   .packaging-types p {
