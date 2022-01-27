@@ -197,7 +197,7 @@ header ul li:hover {
 
 .about h2 {
   padding-bottom: 1rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .about p {
@@ -243,9 +243,8 @@ header ul li:hover {
 .stats {
   padding: 1rem 0 2rem;
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
-  row-gap: 0.5rem;
+  row-gap: 0, rem;
 }
 .stat {
   display: flex;
@@ -271,7 +270,7 @@ header ul li:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  row-gap: 1rem;
+  row-gap: 2rem;
 }
 
 .cards-grid h3 {
@@ -288,8 +287,8 @@ header ul li:hover {
   background-color: var(--bg-clr);
   padding: 1rem;
   border-radius: 5px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(37, 14, 17, 0.12) 0px 2px 4px 0px,
+    rgba(37, 14, 14, 0.32) 0px 2px 16px 0px;
 }
 
 .card img {
@@ -340,14 +339,28 @@ header ul li:hover {
   /* width: 96%; */
   margin: auto;
   cursor: pointer;
-  border-radius: 2%;
+  /* border-radius: 2%; */
   background-color: white;
-  padding: 0.5rem;
   /* padding-top: 0; */
   padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 2px solid black;
+  border-top: 0;
+}
+
+.types-group-one > p:nth-child(1) {
+  border: 2px solid black;
+}
+
+.types-group-two > p:nth-child(1) {
+  border: 2px solid black;
+  border-left: 0;
+}
+
+.types-group-two > p {
+  border-left: 0;
 }
 /* Change color of the heading and icon (on hover and click) */
 .active,
@@ -363,7 +376,8 @@ header ul li:hover {
   color: rgba(104, 22, 22, 0.8);
   font-weight: bold;
   float: right;
-  padding-left: 0.5rem;
+  padding: 0rem 0.5rem;
+  font-size: 2rem;
 }
 /* Add "minus" sign (-) after Accordion (when accordion is active) */
 .active::after {
@@ -380,7 +394,7 @@ header ul li:hover {
   max-height: 0;
   transition: max-height 0.2s ease-out;
   /* font-size: 0.8rem; */
-  margin: 0.2rem 0 0;
+  /* margin: 0.2rem 0 0; */
   text-align: center;
 }
 /* .accordion-panel::after {
@@ -560,6 +574,12 @@ header ul li:hover {
   } */
   /* END OF ABOUT */
 
+  /* WHO ARE WE */
+  .who-are-we {
+    text-align: center;
+  }
+  /* END OF WHO ARE WE */
+
   /* PRODUCTS */
   .cards-grid {
     grid-template-columns: 1fr 1fr;
@@ -587,6 +607,13 @@ header ul li:hover {
 
   .packaging-types p {
     max-width: 70%;
+  }
+
+  .products > p:nth-child(3) {
+    text-align: center;
+    max-width: 60ch;
+    margin: auto;
+    padding: 2rem 0 3rem;
   }
 
   /* END OF PACKAGING */
@@ -656,6 +683,12 @@ header ul li:hover {
     font-size: 0.8rem;
   }
   /* END OF PRODUCTS */
+
+  /* PACKAGING */
+  .products > p:nth-child(3) {
+    max-width: 65ch;
+  }
+  /* END OF PACKAGING */
 
   /* STORING */
   .storing {
@@ -764,7 +797,7 @@ header ul li:hover {
 
   .about p {
     max-width: 100%;
-    text-align: left;
+    /* text-align: left; */
   }
 
   /* END OF ABOUT */
@@ -822,9 +855,11 @@ header ul li:hover {
   }
 
   .cards-grid {
+    grid-auto-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 0;
+    /* grid-template-rows: repeat(2, 1fr); */
+
+    column-gap: 1rem;
   }
 
   .card {
@@ -844,29 +879,28 @@ header ul li:hover {
   .packaging p {
     max-width: 100%;
   }
-
-  .packaging-types p {
-    margin: 0.5rem 0;
-  }
   /* END OF PACKAGING */
 
   /* PACKAGING TYPES */
   .packaging-types {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
 
   .packaging-types p {
+    /* margin: 0.5rem 0; */
+    padding: 0.2rem;
     text-align: left;
+    font-size: 0.8rem;
   }
 
   .types-group-one {
-    max-width: 45%;
+    flex: 1;
   }
 
   .types-group-two {
-    max-width: 45%;
+    flex: 1;
   }
   /* END OF PACKAGING TYPES */
 
@@ -877,7 +911,6 @@ header ul li:hover {
 
   .storing p {
     max-width: 100%;
-    text-align: left;
   }
   /* END OF STORING */
 
