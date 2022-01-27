@@ -354,13 +354,14 @@ header ul li:hover {
   border: 2px solid black;
 }
 
-.types-group-two > p:nth-child(1) {
+/* .types-group-two > p:nth-child(1) {
   border: 2px solid black;
-  border-left: 0;
-}
+  border-top: 0;
+} */
 
 .types-group-two > p {
-  border-left: 0;
+  border: 2px solid black;
+  border-top: 0;
 }
 /* Change color of the heading and icon (on hover and click) */
 .active,
@@ -890,7 +891,7 @@ header ul li:hover {
 
   .packaging-types p {
     /* margin: 0.5rem 0; */
-    padding: 0.2rem;
+    padding: 0.4rem;
     text-align: left;
     font-size: 0.8rem;
   }
@@ -901,6 +902,18 @@ header ul li:hover {
 
   .types-group-two {
     flex: 1;
+  }
+  .types-group-one > p:nth-child(1) {
+    border: 2px solid black;
+  }
+
+  .types-group-two > p:nth-child(1) {
+    border: 2px solid black;
+    border-left: 0;
+  }
+
+  .types-group-two > p {
+    border-left: 0;
   }
   /* END OF PACKAGING TYPES */
 
